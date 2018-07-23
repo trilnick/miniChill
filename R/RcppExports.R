@@ -9,13 +9,10 @@
 #' 
 #' @return The output is the chill portion calculation. Portions are rounded
 #' down to the largest integer.
+#' @export
 NULL
 
-Chill_Cpp <- function(temp) {
-    .Call(`_miniChill_Chill_Cpp`, temp)
-}
-
-rcpp_hello_world <- function() {
-    .Call(`_miniChill_rcpp_hello_world`)
+chill_func <- function(temp) {
+    .Call(`_miniChill_chill_func`, temp)
 }
 

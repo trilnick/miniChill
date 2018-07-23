@@ -6,13 +6,14 @@
 //' 
 //' @return The output is the chill portion calculation. Portions are rounded
 //' down to the largest integer.
+//' @export
 
 #include <Rcpp.h>
 using namespace Rcpp;
 
 // [[Rcpp::export]]
 
-double Chill_Cpp(DoubleVector temp) {
+double chill_func(DoubleVector temp) {
   /* initial setups */
   DoubleVector tempvec = temp + 273;
   DoubleVector ftmprt = 1.6 * 277 * (tempvec - 277) / tempvec;

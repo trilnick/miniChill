@@ -5,31 +5,20 @@
 
 using namespace Rcpp;
 
-// Chill_Cpp
-double Chill_Cpp(DoubleVector temp);
-RcppExport SEXP _miniChill_Chill_Cpp(SEXP tempSEXP) {
+// chill_func
+double chill_func(DoubleVector temp);
+RcppExport SEXP _miniChill_chill_func(SEXP tempSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< DoubleVector >::type temp(tempSEXP);
-    rcpp_result_gen = Rcpp::wrap(Chill_Cpp(temp));
-    return rcpp_result_gen;
-END_RCPP
-}
-// rcpp_hello_world
-List rcpp_hello_world();
-RcppExport SEXP _miniChill_rcpp_hello_world() {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(rcpp_hello_world());
+    rcpp_result_gen = Rcpp::wrap(chill_func(temp));
     return rcpp_result_gen;
 END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_miniChill_Chill_Cpp", (DL_FUNC) &_miniChill_Chill_Cpp, 1},
-    {"_miniChill_rcpp_hello_world", (DL_FUNC) &_miniChill_rcpp_hello_world, 0},
+    {"_miniChill_chill_func", (DL_FUNC) &_miniChill_chill_func, 1},
     {NULL, NULL, 0}
 };
 
