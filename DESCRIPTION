@@ -1,0 +1,14 @@
+Package: miniChill
+Type: Package
+Title: CALCULATING CHILL PORTIONS WITH C++
+Version: 1.0
+Date: 2018-07-23
+Author: Your Name
+Maintainer: Itai Trilnick <itai.trilnick@berkeley.edu>
+URL: http://github.com/trilnick/miniChill
+BugReports: http://github.com/trilnick/miniChill/issues
+Description: This package has one main functionality: calculate chill portion
+counts from a temperature vector. It's implemented with C++ for speed.
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.12.17)
+LinkingTo: Rcpp
