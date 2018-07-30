@@ -7,6 +7,7 @@
 //' @return The output is the chill portion calculation. Portions are rounded
 //' down to the largest integer.
 //' @export
+//' 
 
 #include <Rcpp.h>
 using namespace Rcpp;

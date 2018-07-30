@@ -1,6 +1,6 @@
 Package: miniChill
 Type: Package
-Title: CALCULATING CHILL PORTIONS WITH C++
+Title: CALCULATING CHILL PORTIONS with C++
 Version: 1.0
 Date: 2018-07-23
 Author: Itai Trilnick
@@ -12,3 +12,6 @@ License: GPL (>= 2)
 Imports: Rcpp (>= 0.12.17)
 LinkingTo: Rcpp
 RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr

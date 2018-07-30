@@ -10,6 +10,7 @@
 #' @return The output is the chill portion calculation. Portions are rounded
 #' down to the largest integer.
 #' @export
+#' 
 NULL
 
 chill_func <- function(temp) {
